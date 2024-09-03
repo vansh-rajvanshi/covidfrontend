@@ -27,7 +27,7 @@
         function getCovid(){
             var statedata=document.getElementById("state").value;
             var citydata=document.getElementById("city").value;
-            fetch(`http://localhost:8080/covid-data/citywise/${statedata}/${citydata}`)
+            fetch(`https://covid-tracker-qayp.onrender.com/covid-data/citywise/${statedata}/${citydata}`)
             .then((Response)=>{
                 if(!Response.ok){
                     throw new Error("Network Response was not Ok");
